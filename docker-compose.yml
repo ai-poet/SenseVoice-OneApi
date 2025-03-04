@@ -6,8 +6,6 @@ services:
     container_name: sensevoice
     ports:
       - "8000:8000"
-    volumes:
-      - /home/iic:/app/iic
     environment:
       - DEVICE_TYPE=cpu
     restart: unless-stopped 
